@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Animation</title>
+
+    <style>
+        .text-container {
+            display: flex;
+            justify-content: center;
+            font-family: monospace;
+            font-size: 80px;
+            font-weight: 800;
+            letter-spacing: 5px;
+            perspective: 500px;
+        }
+
+        .text-container > b {
+            height: 90px;
+            box-shadow: 0px 20px 10px gray;
+            background: linear-gradient(to bottom, black, red);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            transform-origin: bottom;
+            animation: getUpDown 10s infinite;
+        }
+
+        .text-container > b:nth-child(1) { animation-delay: 0s; }
+        .text-container > b:nth-child(2) { animation-delay: 0.25s; }
+        .text-container > b:nth-child(3) { animation-delay: 0.50s; }
+        .text-container > b:nth-child(4) { animation-delay: 0.75s; }
+        .text-container > b:nth-child(5) { animation-delay: 1s; }
+
+        @keyframes getUpDown {
+            from { transform: rotateX(-85deg); }
+            10%, 50% { transform: rotateX(0deg); }
+            60%, to { transform: rotateX(-85deg); }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="text-container">
+        <b>R</b>
+        <b>I</b>
+        <b>N</b>
+        <b>K</b>
+        <b>U</b>
+    </div>
+
+</body>
+</html>

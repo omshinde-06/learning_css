@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body{
+        align-items: center;
+        height: 100vh;
+    }
+
+    .swing{
+       animation:swing 1s ease-in-out alternate;
+       transform-origin: top center;
+       position: relative;
+
+    }
+
+    @keyframes swing{
+        0%{transform: rotate(2deg);}
+        100%{transform: rotate(-2deg);}
+    }
+</style>
+<body>
+    <figure class="swing">
+        <img src="images/tiger-2535888_640.jpg"/>
+    </figure>
+</body>
+</html>

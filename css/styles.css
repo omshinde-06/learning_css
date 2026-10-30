@@ -124,3 +124,44 @@
     position: fixed;
  }
            
+ .flex-item{
+    background-color: aquamarine;
+    width: 200px;
+    height: 180px;
+    font-weight:900px ;
+    font-size: 40px;
+    margin: 10px;
+    border: 2px solid  red;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+
+ }
+ .flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+
+ }
+ .bg_img{
+    background-color:black;
+    background-image: url("../images/tiger-2535888_640.jpg;");
+    background-repeat: no-repeat;
+
+    
+ }
+ .h1_color{
+    color: wheat;
+ }
+ .linera{
+    height: 400px;
+    background:linear-gradient(orange,white, green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
